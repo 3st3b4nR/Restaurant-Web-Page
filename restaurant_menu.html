@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Esteban´s Restaurant</title>
+        <style>
+            #header-img{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header{
+                background-color: #031904;
+                padding: 5px;
+                text-align: center;
+            }
+            #menu, #order-form{
+                margin: 20px;
+                padding: 20px;
+                border: 2px solid #031904;
+                border-radius: 10px;
+                background-color: beige;
+                text-align: center;
+            }
+            .food-image{
+                width: 300px;
+                height: 200px;
+                border-radius: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 5px dashed #031904;
+            }
+            .title-food{
+                text-align: center;
+                font-size: 20px;
+                color: #031904;
+            }
+            main{
+                background-image: url(https://img.freepik.com/premium-vector/hand-drawing-seamless-abstract-leaf-line-pattern_207579-43.jpg?semt=ais_hybrid&w=740);
+                background-repeat: repeat;
+            }  
+            .description{
+                text-align: center;
+                background-color: beige;
+                padding: 10px;
+                margin-left: 300px;
+                margin-right: 300px;
+                border-radius: 20px;
+
+            }
+            .price{
+                text-align: center;
+                font-size: 20px;
+                color: beige;
+                font-weight: bold;
+                background-color: #031904;
+                margin-left: 550px;
+                margin-right: 550px;
+                border-radius: 20px;
+                padding: 10px 0;
+            }
+            hr{
+                border:1px solid #031904;
+            }
+            .number-input{
+                width: 50px;
+                height: 25px;
+                font-size: 16px;
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 100px;
+            }
+            .number-label{
+                font-size: 22px;
+                color: #031904;
+                margin-left: 100px;
+            }
+            #specifications{
+                width: 80%;
+                height: 100px;
+                font-size: 16px;
+                margin-left: 10%;
+                margin-right: 10%;
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px solid #031904;
+            }
+            #submit{
+                background-color: #031904;
+                color: beige;
+                font-size: 20px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                margin-left: 42%;
+                margin-right: 45%;
+            }
+            #pie{
+                text-align: center;
+                color: beige;
+                background-color: #031904;
+                padding: 10px 0;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body> 
+        <header>
+            <h1 style="font-style: italic; color: beige;">Esteban's Restaurant</h1>
+            <img src="https://img.freepik.com/premium-vector/elegant-restaurant-logo-with-spoonfork-tree_758098-212.jpg?semt=ais_hybrid&w=740" id="header-img" width="400" height="180">
+            <nav>
+                <a href="#menu"><h2 style="color:beige">Go to the menu</h2></a>
+                <a href="#order-form"><h2 style="color:beige">Order</h2></a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2 id="menu">------------- Menu -------------</h2>
+                <article>
+                    <h3 class="title-food">The E Pizza</h3>
+                    <img src="https://avatars.mds.yandex.net/i?id=155f92152e17d6b61db7c84b858cbab0f9c966ad-17391873-images-thumbs&n=13" alt="The E pizza" class="food-image">
+                    <p class="description">The delicious E Pizza is an awarded dish made right from Italy <br> It´s a secret creation from the owner when he was in a trip to Milan. Don´t ask, just enjoy.</p>
+                    <h4 class="price">$500.000</h4>
+                </article>
+                <hr>
+                <article>
+                    <h3 class="title-food">Big Boy</h3>
+                    <img src="https://avatars.mds.yandex.net/get-altay/15045776/2a0000019730780db35fb0c4d2dd993f1f39/orig" alt="The big boy", class="food-image">
+                    <p class="description">The Big Boy is the flavoured rocket that is going to explode <br> in your japanesse tounge, just make sure to be prepared for this tasting bomb.</p>
+                    <h4 class="price">$300.000</h4>
+                </article>
+                <hr>
+                <article>
+                    <h3 class="title-food">The Milkyway</h3>
+                    <img src="https://theseasidebaker.com/wp-content/uploads/2014/03/IMG_0220.jpg" alt="The milkyway" class="food-image">
+                    <p class="description">The Milkyway is a dessert that will take you to another galaxy <br> with its creamy and sweet flavour, you will feel like you are floating in space.</p>
+                    <h4 class="price">$200.000</h4>
+                </article>
+                <hr>
+                <article>
+                    <h3 class="title-food">El Nacho</h3>
+                    <img src="https://i.pinimg.com/736x/b4/8a/db/b48adb2b2238aafc546020af817d155a.jpg" alt="El Nacho" class="food-image">
+                    <p class="description">El Nacho is a traditional mexican dish that will make you feel the fiesta <br> with its spicy and cheesy flavour, it´s perfect for sharing with friends.</p>
+                    <h4 class="price">$350.000</h4>
+                </article>
+            </section>
+            <section>
+                <h2 id="order-form">------------- Place Your Order -------------</h2> <br>
+                <form>
+                    <h3 class="title-food">Choose the quantity of dishes you are going to order</h3> 
+                    <br>
+                    <label for="E-pizza", class="number-label">The E Pizza........................................................................................................................................................ </label><input type="number" class="number-input" min="0" max="20" id="E-pizza">
+                    <br><br>
+                    <label for="Big Boy", class="number-label">Big Boy.............................................................................................................................................................. </label><input type="number" class="number-input" min="0" max="20" id="Big Boy">
+                    <br><br> 
+                    <label for="Milkyway", class="number-label">The Milkyway.................................................................................................................................................... </label><input type="number" class="number-input" min="0" max="20" id="Milkyway">
+                    <br><br>  
+                    <label for="El-Nacho", class="number-label">El Nacho............................................................................................................................................................ </label><input type="number" class="number-input" min="0" max="20" id="El-Nacho">
+                    <br><br><hr><br>
+                    <h3 class="title-food">Add-ons and Sides</h3><br>
+                    <label for="french-fries" class="number-label">French Fries</label><input type="checkbox" id="french-fries">
+                    <label for="extra-sauces" class="number-label">Extra Sauces</label><input type="checkbox" id="extra-sauces">
+                    <label for="chocolate-font" class="number-label">Chocolate Font</label><input type="checkbox" id="chocolate-font">
+                    <label for="bowl-fruit" class="number-label">Bowl of Fruit</label><input type="checkbox" id="bowl-fruit">
+                    <label for="the-special-wine" class="number-label">THE WINE</label><input type="checkbox" id="the-special-wine">
+                    <br><br>
+                    <label for="top-secret" class="number-label">Top Secret</label><input type="checkbox" id="top-secret">
+                    <label for="party-time" class="number-label" style="margin-left: 115px;">Party Time</label><input type="checkbox" id="party-time">
+                    <br><br><br><hr><br>
+                    <h3 class="title-food">Special Instructions for the Chef</h3>
+                    <textarea id="specifications" placeholder="Here!"></textarea>
+                    <br><br><br>
+                    <input type="submit" value="Go To Check Out" id="submit">
+                    <br><br>
+                </form>
+            </section>
+            <footer id="pie">
+                <h4>© 2024 Esteban's Restaurant. All rights reserved.</h4>
+                <img src="https://img.freepik.com/premium-vector/elegant-restaurant-logo-with-spoonfork-tree_758098-212.jpg?semt=ais_hybrid&w=740" class="header-img" width="200" height="90">
+            </footer>
+        </main>
+    </body>
+</html>
